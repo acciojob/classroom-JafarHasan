@@ -140,8 +140,11 @@ public class StudentRepository {
     public void deleteAllTeachers(){
 
         // your code goes here
-        teacherMap.clear();
+       // teacherMap.clear();
         //studentMap.clear();
-        teacherStudentMapping.clear();
+        //teacherStudentMapping.clear();
+        for(String name:teacherMap.keySet()){
+            deleteTeacher(name);
+        }
     }
 }
