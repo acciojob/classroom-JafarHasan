@@ -15,12 +15,10 @@ public class Teacher {
         this.name = name;
     }
 
-    public Teacher(String name,String numberOfStudents,String age){
-
-        this.name=name;
-        this.numberOfStudents=Integer.parseInt(numberOfStudents);
-        this.age=Integer.parseInt(age);
-
+    public Teacher(String name, int age, int numberOfStudents) {
+        this.name = name;
+        this.age = (age);
+        this.numberOfStudents = (numberOfStudents);
     }
     public String getName() {
         return name;
