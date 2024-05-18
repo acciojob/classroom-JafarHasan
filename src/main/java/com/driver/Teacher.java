@@ -9,15 +9,18 @@ public class Teacher {
     private int age;
 
     public Teacher(int age, int numberOfStudents, String name) {
+
         this.age = age;
         this.numberOfStudents = numberOfStudents;
         this.name = name;
     }
 
-    public Teacher(String age,String numberOfStudents,String name){
-        this.age=Integer.parseInt(age);
-        this.numberOfStudents=Integer.parseInt(numberOfStudents);
+    public Teacher(String name,String numberOfStudents,String age){
+
         this.name=name;
+        this.numberOfStudents=Integer.parseInt(numberOfStudents);
+        this.age=Integer.parseInt(age);
+
     }
     public String getName() {
         return name;
