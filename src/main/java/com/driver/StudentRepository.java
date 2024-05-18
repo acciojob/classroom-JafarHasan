@@ -123,7 +123,17 @@ public class StudentRepository {
 
         // your code goes here
         teacherMap.remove(teacher);
+        List<String> studentList=teacherStudentMapping.get(teacher);
+        //removing teacher from map
         teacherStudentMapping.remove(teacher);
+
+        //removing students from studentMap also corresponding the teacher
+        for(String name:studentList){
+            if(studentMap.containsKey(name)){
+                studentMap.remove(name);
+            }
+        }
+
 
     }
 
@@ -131,6 +141,7 @@ public class StudentRepository {
 
         // your code goes here
         teacherMap.clear();
+        //studentMap.clear();
         teacherStudentMapping.clear();
     }
 }
