@@ -8,7 +8,7 @@ public class Teacher {
 
     private int age;
 
-    public Teacher(int age, int numberOfStudents, String name) {
+    public Teacher(String name, int numberOfStudents, int age) {
 
         this.age = age;
         this.numberOfStudents = numberOfStudents;
