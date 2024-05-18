@@ -12,6 +12,12 @@ public class Student {
         this.averageScore = averageScore;
     }
 
+    // Overloaded constructor to handle String inputs for age and score
+    public Student(String name, String age, String score) {
+        this.name = name;
+        this.age = Integer.parseInt(age);
+        this.averageScore = Integer.parseInt(score);
+    }
     public String getName() {
         return name;
     }
