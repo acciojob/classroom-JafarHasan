@@ -15,11 +15,7 @@ public class Teacher {
         this.name = name;
     }
 
-    public Teacher(String name, int age, int numberOfStudents) {
-        this.name = name;
-        this.age = (age);
-        this.numberOfStudents = (numberOfStudents);
-    }
+
     public String getName() {
         return name;
     }
