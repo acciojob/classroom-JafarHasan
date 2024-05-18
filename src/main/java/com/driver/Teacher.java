@@ -14,6 +14,11 @@ public class Teacher {
         this.name = name;
     }
 
+    public Teacher(String age,String numberOfStudents,String name){
+        this.age=Integer.parseInt(age);
+        this.numberOfStudents=Integer.parseInt(numberOfStudents);
+        this.name=name;
+    }
     public String getName() {
         return name;
     }
