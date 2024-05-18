@@ -8,6 +8,12 @@ public class Teacher {
 
     private int age;
 
+    public Teacher(int age, int numberOfStudents, String name) {
+        this.age = age;
+        this.numberOfStudents = numberOfStudents;
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
